@@ -158,6 +158,7 @@ In Terminal 2, start map building
 
 
 In Terminal 3, launch rviz
+
 `roslaunch mybot_description mybot_rviz_amcl.launch`
 
 
