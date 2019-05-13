@@ -25,7 +25,7 @@ export ROS_IP=*<HOS_IP_ADDRESS>*
 
 ## STEP FOR RUNNING SIMULATION
  
- #### GMAPPING
+ #### *GMAPPING*
  
  **Creating the Map**
 
@@ -78,7 +78,7 @@ In Terminal 3, launch rviz
 
 
 
-#### HECTOR MAPPING
+#### *HECTOR MAPPING*
 
 **Creating the Map**
 
@@ -131,7 +131,7 @@ In Terminal 3, launch rviz
 
 
 
-### RTAB MAPPING
+### *RTAB MAPPING*
 
 **Creating the Map**
 
@@ -182,7 +182,7 @@ In Terminal 3, launch rviz
 
 ## STEPS FOR RUNNING REAL TIME EXPERIMENTATION
 
- ### GMAPPING
+ ### *GMAPPING*
  
  **Creating the Map**
 
@@ -242,7 +242,7 @@ In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
 
 
 
-### HECTOR MAP
+### *HECTOR MAP*
  
  **Creating the Map**
 
@@ -303,7 +303,7 @@ In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
 
 
 
-### RTAB-MAP
+### *RTAB-MAP*
  
  **Creating the Map**
 
