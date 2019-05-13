@@ -162,5 +162,205 @@ In Terminal 3, launch rviz
 `roslaunch mybot_description mybot_rviz_amcl.launch`
 
 
+**STEPS FOR RUNNING REAL TIME EXPERIMENTATION**
+
+ **GMAPPING**
+ 
+ **Creating the Map**
+
+Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+In Terminal 3, start map building (IN MASTER PC)
+
+`roslaunch rosbot_navigation gmapping_demo.launch`
+
+
+In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+In Terminal 5, start teleop (IN MASTER PC)
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+
+**Saving the Map**
+
+In Terminal 6, save the map to some file path (IN MASTER PC)
+
+`rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/test_map`
+
+
+**Loading the Map**
+
+Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+
+In Terminal 3, start map building
+
+`roslaunch rosbot_navigation amcl_demo.launch`
+
+
+In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+
+**HECTOR MAP**
+ 
+ **Creating the Map**
+
+Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+In Terminal 3, start map building (IN MASTER PC)
+
+`roslaunch rosbot_navigation tutorial.launch`
+
+
+In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+In Terminal 5, start teleop (IN MASTER PC)
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+
+**Saving the Map**
+
+In Terminal 6, save the map to some file path (IN MASTER PC)
+
+`rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/hector_map`
+
+
+**Loading the Map**
+
+Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+
+In Terminal 3, start map building
+
+`roslaunch rosbot_navigation amcl_demo.launch`
+
+
+In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+
+
+**RTAB-MAP**
+ 
+ **Creating the Map**
+
+Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+In Terminal 3, launch the kinect depth camera  launch file (IN RPi3 remote SLAVE PC)
+
+`sudo chmod 777 -R /dev/bus/usb` (one time use ,before running the launch file)
+
+`roslaunch freenect_launch freenect.launch depth_registration:=true data_skip:=2`
+
+
+In Terminal 4, start map building (IN MASTER PC)
+
+`roslaunch rosbot_navigation rtab.launch`
+
+
+In Terminal 5, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+In Terminal 6, start teleop (IN MASTER PC)
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+
+**Saving the Map**
+
+Map server is not required in RTAB-MAP 
+
+
+**Loading the Map**
+
+Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
+
+In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch rplidar_ros view_rplidar.launch`
+
+In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
+
+`roslaunch ros_arduino_python arduino.launch`
+
+In Terminal 3, launch the kinect depth camera  launch file (IN RPi3 remote SLAVE PC)
+
+`sudo chmod 777 -R /dev/bus/usb` (one time use ,before running the launch file)
+
+`roslaunch freenect_launch freenect.launch depth_registration:=true data_skip:=2`
+
+
+In Terminal 3, start map building (IN MASTER PC)
+
+`roslaunch rosbot_navigation rtab.launch localization:=true`
+
+
+In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
+
+`roslaunch rosbot_urdf rviz.launch`
+
+
+
+
+
+
+
+
+
 
 
