@@ -6,16 +6,19 @@ It also includes launch files for Gazebo simulations as well as Real-time hardwa
 Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
 
 
+**Add these in .bashrc file for single system ROS implementation**
 
 export ROS_MASTER_URI=http://localhost:11311/
 
 export ROS_HOSTNAME=localhost
 
-#export ROS_MASTER_URI=http://192.168.8.100:11311/
+**Add these in .bashrc file for multi system ROS implementation**
 
-#export ROS_HOSTNAME=192.168.8.100
+export ROS_MASTER_URI=http://<HOS_IP_ADDRESS>/
 
-#export ROS_IP=192.168.8.100
+export ROS_HOSTNAME=<HOS_IP_ADDRESS>
+
+export ROS_IP=<HOS_IP_ADDRESS>
 
 
 
