@@ -14,20 +14,20 @@ export ROS_HOSTNAME=localhost
 
 **Add these in .bashrc file for multi system ROS implementation**
 
-export ROS_MASTER_URI=http://<HOS_IP_ADDRESS>/
+export ROS_MASTER_URI=http://*<HOS_IP_ADDRESS>*/
 
-export ROS_HOSTNAME=<HOS_IP_ADDRESS>
+export ROS_HOSTNAME=*<HOS_IP_ADDRESS>*
 
-export ROS_IP=<HOS_IP_ADDRESS>
+export ROS_IP=*<HOS_IP_ADDRESS>*
 
 
 
 
 ## STEP FOR RUNNING SIMULATION
  
- ### GMAPPING
+ #### GMAPPING
  
- ###### Creating the Map
+ **Creating the Map**
 
 Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
 
@@ -57,7 +57,7 @@ In Terminal 5, save the map to some file path
 `rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map`
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
@@ -78,7 +78,7 @@ In Terminal 3, launch rviz
 
 
 
-**HECTOR MAPPING**
+#### HECTOR MAPPING
 
 **Creating the Map**
 
@@ -110,7 +110,7 @@ In Terminal 5, save the map to some file path
 `rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/hector_map`
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
@@ -131,7 +131,7 @@ In Terminal 3, launch rviz
 
 
 
-**RTAB MAPPING**
+### RTAB MAPPING
 
 **Creating the Map**
 
@@ -161,7 +161,7 @@ In Terminal 4, start teleop
 Map server is not required in RTAB-MAP 
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
@@ -180,9 +180,9 @@ In Terminal 3, launch rviz
 `roslaunch mybot_description mybot_rviz_amcl.launch`
 
 
-**STEPS FOR RUNNING REAL TIME EXPERIMENTATION**
+## STEPS FOR RUNNING REAL TIME EXPERIMENTATION
 
- **GMAPPING**
+ ### GMAPPING
  
  **Creating the Map**
 
@@ -218,7 +218,7 @@ In Terminal 6, save the map to some file path (IN MASTER PC)
 `rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/test_map`
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
@@ -242,7 +242,7 @@ In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
 
 
 
-**HECTOR MAP**
+### HECTOR MAP
  
  **Creating the Map**
 
@@ -278,7 +278,7 @@ In Terminal 6, save the map to some file path (IN MASTER PC)
 `rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/hector_map`
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
@@ -303,7 +303,7 @@ In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
 
 
 
-**RTAB-MAP**
+### RTAB-MAP
  
  **Creating the Map**
 
@@ -344,7 +344,7 @@ In Terminal 6, start teleop (IN MASTER PC)
 Map server is not required in RTAB-MAP 
 
 
-**Loading the Map**
+**Loading the Map followed by localization**
 
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
