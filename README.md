@@ -23,11 +23,11 @@ export ROS_IP=<HOS_IP_ADDRESS>
 
 
 
-**STEP FOR RUNNING SIMULATION**
+## STEP FOR RUNNING SIMULATION
  
- **GMAPPING**
+ ### GMAPPING
  
- **Creating the Map**
+ ###### Creating the Map
 
 Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
 
