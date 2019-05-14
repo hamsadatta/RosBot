@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find rosbot_urdf)/launch/rviz.launch"/>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_to_kinect_broadcaster" args="-0.17 0.04 0.1975 0 0 0 base_link camera_link 20" />
+
+  <node pkg="tf" type="static_transform_publisher" name="lidar_broadcaster" args="0 0 0 0 0 0  base_link laser 20" />
+ 
+
+</launch>
