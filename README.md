@@ -14,7 +14,7 @@ Software
     
     OS:  Ubuntu 16.04
     
-    OS: Gazebo 7.0.0
+    SIM: Gazebo 7.0.0
 
 Hardware
 
