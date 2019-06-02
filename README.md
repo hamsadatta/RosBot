@@ -18,7 +18,7 @@ Software
 
 Hardware
 
-##  MASTER PC
+MASTER PC
 
     RAM: 8GB DDR4
     
@@ -28,15 +28,17 @@ Hardware
     
     GPU: Nvidia MX150-4GB 
     
- ## REMOTE PC
+ REMOTE PC
     Raspberry pi3
  
- ## OTHERS
+ OTHERS
     RP LIDAR A1M8
     
     Microsoft Kinect Sensor
     
+    SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
     
+    L298N 2A Based Motor Driver Module
 
 
 Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
