@@ -3,6 +3,30 @@ This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
 
+Compatability mode
+
+This is the hardware and software used for this project:
+
+
+Software
+
+    ROS: Kinetic
+    
+    OS:  Ubuntu 16.04
+    
+    OS: Gazebo 7.0.0
+
+Hardware
+
+    RAM: 8GB DDR4
+    
+    SSD: Samsung EVO
+    
+    CPU: Intel i5
+    
+    GPU: Nvidia MX150-4GB 
+
+
 Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
 
 
