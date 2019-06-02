@@ -5,7 +5,7 @@ It also includes launch files for Gazebo simulations as well as Real-time hardwa
 
 Compatability mode
 
-This is the hardware and software used for this project:
+Hardware and software used for this project:
 
 
 Software
