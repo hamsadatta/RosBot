@@ -29,9 +29,11 @@ MASTER PC
     GPU: Nvidia MX150-4GB 
     
  REMOTE PC
+ 
     Raspberry pi3
  
  OTHERS
+ 
     RP LIDAR A1M8
     
     Microsoft Kinect Sensor
