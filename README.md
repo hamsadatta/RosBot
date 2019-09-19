@@ -2,49 +2,23 @@
 
 ## Quick Start
 This is a quick start guide for running the project
-
 The Repo contains launch files for Gmapping, Hector Map and Rtab Map. 
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
 
-Compatability mode
+Install the following package dependencies to run this project
 
-Hardware and software used for this project:
+For Gmapping
 
+`sudo apt-get install ros-kinetic-slam-gmapping`
 
-Software
+For Hector Mapping
 
-    ROS: Kinetic
-    
-    OS:  Ubuntu 16.04
-    
-    SIM: Gazebo 7.0.0
+`sudo apt-get install ros-kinetic-hector-slam`
 
-Hardware
+For RTAB Mapping
 
-MASTER PC
-
-    RAM: 8GB DDR4
-    
-    SSD: Samsung EVO
-    
-    CPU: Intel i5
-    
-    GPU: Nvidia MX150-4GB 
-    
- REMOTE PC
- 
-    Raspberry pi3
- 
- OTHERS
- 
-    RP LIDAR A1M8
-    
-    Microsoft Kinect Sensor
-    
-    SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
-    
-    L298N 2A Based Motor Driver Module
+`sudo apt-get install ros-kinetic-rtabmap-ros`
 
 
 Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
