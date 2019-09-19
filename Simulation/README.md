@@ -39,7 +39,7 @@ $ cd
 $ nano .bashrc
 ```
 
-**_Add these at the end of .bashrc file_**
+**_Add these at the end of .bashrc file and save the file_**
 
 ```
 export ROS_MASTER_URI=http://localhost:11311/
