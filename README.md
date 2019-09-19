@@ -8,7 +8,7 @@ This project has resulted in a dynamic model of a small-scale vehicle which can 
 
 ```diff
 - This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
-- Please navigate through the readme files to know more about simulation and real-time implementation
+- Please navigate through the readme files to know more about simulation and real-time implementation in respective folders
 
 ```
  
