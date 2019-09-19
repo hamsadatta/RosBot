@@ -91,7 +91,6 @@ $ source /devel/setup.bash
 #### *GMAP SLAM*
  
 **Creating the Map**
-
 Run the following commands below. And use teleop to move the robot around to create an accurate and thorough map.
 
 In Terminal 1, launch the Gazebo world
@@ -113,16 +112,13 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 
 **Saving the Map**
-
 In Terminal 5, save the map to some file path
-
 ```
 rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map
 ```
 
 
 **Loading the Map followed by localization**
-
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
 In Terminal 1, launch the Gazebo world
@@ -130,64 +126,60 @@ In Terminal 1, launch the Gazebo world
 roslaunch mybot_gazebo mybot_world.launch
 ```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation amcl_demo.launch`
-
-
+```
+roslaunch mybot_navigation amcl_demo.launch
+```
 In Terminal 3, launch rviz
+```
+roslaunch mybot_description mybot_rviz_amcl.launch
+```
 
-`roslaunch mybot_description mybot_rviz_amcl.launch`
 
 
 #### *HECTOR MAPPING*
-
 **Creating the Map**
-
 Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
+```
+roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation tutorial.launch`
-
-
+```
+roslaunch mybot_navigation tutorial.launch
+```
 In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
+```
+roslaunch mybot_description mybot_rviz_gmapping.launch
+```
 In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 
 
 **Saving the Map**
-
 In Terminal 5, save the map to some file path
-
-`rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/hector_map`
+```
+rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/hector_map
+```
 
 
 **Loading the Map followed by localization**
-
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
+```
+roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation amcl_demo.launch`
-
-
+```
+roslaunch mybot_navigation amcl_demo.launch
+```
 In Terminal 3, launch rviz
-
-`roslaunch mybot_description mybot_rviz_amcl.launch`
+```
+roslaunch mybot_description mybot_rviz_amcl.launch
+```
 
 
 
@@ -195,50 +187,43 @@ In Terminal 3, launch rviz
 ### *RTAB MAPPING*
 
 **Creating the Map**
-
 Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
+```
+roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation rtab.launch`
-
-
+```
+roslaunch mybot_navigation rtab.launch
+```
 In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
+```
+roslaunch mybot_description mybot_rviz_gmapping.launch
+```
 In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 
 
 **Saving the Map**
-
 Map server is not required in RTAB-MAP 
 
 
 **Loading the Map followed by localization**
-
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
+```roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation rtab.launch localization:=true`
-
-
+```
+roslaunch mybot_navigation rtab.launch localization:=true
+```
 In Terminal 3, launch rviz
-
-`roslaunch mybot_description mybot_rviz_amcl.launch`
+```roslaunch mybot_description mybot_rviz_amcl.launch
+```
 
 
 
