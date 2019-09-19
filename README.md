@@ -28,23 +28,23 @@ Now that we have installed ROS and are ready with our dependencies,firstly downl
  
  create a catkin package by running the below command in a terminal
  
- `cd ~/mybot_ws/src`
+ `$ cd ~/mybot_ws/src`
  
  copy paste the contents form the src to your src folder just created in your PC, and run the following commands
  
-  `cd ~/mybot_ws`
+  `$ cd ~/mybot_ws`
  
-  `catkin_make`
+  `$ catkin_make`
  
  The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation
  
  If you close the terminal do the following
 
- `source /opt/ros/kinetic/setup.bash`
+ `$ source /opt/ros/kinetic/setup.bash`
 
- `cd ~/mybot_ws`
+ `$ cd ~/mybot_ws`
 
- `source /devel/setup.bash`
+ `$ source /devel/setup.bash`
 
 **_Add these in .bashrc file for single system ROS implementation_**
 
