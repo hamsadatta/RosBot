@@ -47,7 +47,9 @@ export ROS_MASTER_URI=http://localhost:11311/
 export ROS_HOSTNAME=localhost
 ```
 
-`$ source /opt/ros/kinetic/setup.bash`
+```
+$ source /opt/ros/kinetic/setup.bash
+```
 
 Now, We have installed ROS and it's supporting dependencies to run this project.
 
@@ -55,7 +57,9 @@ Now, We have installed ROS and it's supporting dependencies to run this project.
 
 Download the 'Simulation_ws' workspace from the repo by running the following commands.
  
-`$ git clone https://github.com/hamsadatta/RosBot/tree/Quickstart/Simulation`
+```
+$ git clone https://github.com/hamsadatta/RosBot/tree/Quickstart/Simulation
+```
 
 Now change directory to 'Simulation_ws' and build the workspace using the following commands.
  
@@ -82,38 +86,39 @@ $ source /devel/setup.bash
 - RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT 
 ```
 
-### STEPS FOR RUNNING SIMULATION
+### THE SIMULATION
  
-#### *GMAPPING*
+#### *GMAP SLAM*
  
 **Creating the Map**
 
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
+Run the following commands below. And use teleop to move the robot around to create an accurate and thorough map.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
+```
+roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
-
-`roslaunch mybot_navigation gmapping_demo.launch`
-
-
+```
+roslaunch mybot_navigation gmapping_demo.launch
+```
 In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
+```
+roslaunch mybot_description mybot_rviz_gmapping.launch
+```
 In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 
 
 **Saving the Map**
 
 In Terminal 5, save the map to some file path
 
-`rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map`
+```
+rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map
+```
 
 
 **Loading the Map followed by localization**
@@ -121,10 +126,9 @@ In Terminal 5, save the map to some file path
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
 In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
+```
+roslaunch mybot_gazebo mybot_world.launch
+```
 In Terminal 2, start map building
 
 `roslaunch mybot_navigation amcl_demo.launch`
