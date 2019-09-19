@@ -8,9 +8,8 @@ This Project covers, the examining of these algorithms in both simulations, and 
 This project has resulted in a dynamic model of a small-scale vehicle which can be used for simulation of any ROS-compliant SLAM-algorithm, and this model has been simulated extensively in order to provide empirical evidence to define which SLAM algorithm is most suitable for this application.
 
 This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
-It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
-
-
+Please navigate through the readme files to know more about simulation and real-time implementation
+ 
 Compatability mode
 
 Hardware and software used for this project:
@@ -50,8 +49,6 @@ MASTER PC
     
     L298N 2A Based Motor Driver Module
 
-
-Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
 
 
 
