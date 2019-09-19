@@ -36,10 +36,15 @@ Now that we have installed ROS and are ready with our dependencies,firstly downl
  
   `catkin_make`
  
- The above command 'catkin_make' will build you workspace. 
+ The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation
  
-Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
+ If you close the terminal do the following
 
+ `source /opt/ros/kinetic/setup.bash`
+
+ `cd ~/mybot_ws`
+
+ `source /devel/setup.bash`
 
 **_Add these in .bashrc file for single system ROS implementation_**
 
