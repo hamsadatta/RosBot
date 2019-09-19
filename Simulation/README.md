@@ -5,7 +5,7 @@ This is a quick start guide for running our project in your system
 This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms. 
 It also includes launch files for Gazebo simulations.
 
-If you are new to ROS please refer ROS wiki page-http://wiki.ros.org/ROS/Tutorials
+If you are new to ROS please refer ROS wiki page - http://wiki.ros.org/ROS/Tutorials
 
 ### Setting up ROS in a Linux (Ubuntu) PC
 
