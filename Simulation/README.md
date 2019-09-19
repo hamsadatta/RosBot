@@ -101,7 +101,7 @@ In Terminal 2, start map building
 ```
 roslaunch mybot_navigation gmapping_demo.launch
 ```
-In Terminal 3, launch rviz and set the following parameters:
+In Terminal 3, launch rviz and set the parameters:
 ```
 roslaunch mybot_description mybot_rviz_gmapping.launch
 ```
@@ -148,7 +148,7 @@ In Terminal 2, start map building
 ```
 roslaunch mybot_navigation tutorial.launch
 ```
-In Terminal 3, launch rviz and set the following parameters:
+In Terminal 3, launch rviz and set the parameters:
 ```
 roslaunch mybot_description mybot_rviz_gmapping.launch
 ```
@@ -197,7 +197,7 @@ In Terminal 2, start map building
 ```
 roslaunch mybot_navigation rtab.launch
 ```
-In Terminal 3, launch rviz and set the following parameters:
+In Terminal 3, launch rviz and set the parameters:
 ```
 roslaunch mybot_description mybot_rviz_gmapping.launch
 ```
