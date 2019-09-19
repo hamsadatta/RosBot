@@ -10,15 +10,15 @@ Install the following dependencies to run this project
 
 ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-`sudo apt-get update`
+`$ sudo apt-get update
 
-`sudo apt-get install ros-kinetic-slam-gmapping`
+ $ sudo apt-get install ros-kinetic-slam-gmapping
 
-`sudo apt-get install ros-kinetic-hector-slam`
+ $ sudo apt-get install ros-kinetic-hector-slam
 
-`sudo apt-get install ros-kinetic-rtabmap-ros`
+ $ sudo apt-get install ros-kinetic-rtabmap-ros
 
-`sudo apt-get install ros-melodic-teleop-twist-keyboard`
+ $ sudo apt-get install ros-melodic-teleop-twist-keyboard`
 
  To run this project on Melodic just replace 'kinetic' with 'melodic'.
 
