@@ -1,17 +1,17 @@
 # RosBot (An Autonomous Navigation Ambition Project)
 
 ## Quick Start
-This is a quick start guide for running the project
-The Repo contains launch files for Gmapping, Hector Map and Rtab Map. 
+This is a quick start guide for running our project in your system
+This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms. 
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
-ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu
+ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Desktop-Full Install)
 
 If you are new to ROS please refer ROS wiki page-http://wiki.ros.org/ROS/Tutorials
 
 Install the following dependencies to run this project
 
-```$ sudo apt-get update```
+`$ sudo apt-get update`
 
 `$ sudo apt-get install ros-kinetic-slam-gmapping`
 
