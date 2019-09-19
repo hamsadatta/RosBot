@@ -1,8 +1,9 @@
 # RosBot (An Autonomous Navigation Ambition Project)
 
 ## Quick Start
+This is a quick start guide for running the project
 
-This Repo contains launch files for Gmapping, Hector Map and Rtab Map. 
+The Repo contains launch files for Gmapping, Hector Map and Rtab Map. 
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
 
