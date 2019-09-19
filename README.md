@@ -1,6 +1,5 @@
 # RosBot (An Autonomous Navigation Ambition Project)
 
-## Abstract
 As autonomous driving is rapidly becoming the next major challenge in the automotive industry, the problem of Simultaneous Localization and Mapping (SLAM) has never been more relevant than it is today. This project presents the idea of examining SLAM algorithms by implementing such an algorithm on a custom bot which has been fitted with sensors and microcontrollers. The software architecture of this small-scale vehicle is based on the Robot Operating System (ROS), an open-source framework designed to be used in robotic applications.
 
 This Project covers, the examining of these algorithms in both simulations, and real-world experiments. The method used in this project is more related to v-development cycle, meaning that a near model of the vehicle is first implemented in simulations using each algorithm and followed by real world experiment. The comparative analysis is performed next.
