@@ -9,7 +9,7 @@ If you are new to ROS please refer ROS wiki page - http://wiki.ros.org/ROS/Tutor
 
 ### Setting up ROS in a Linux (Ubuntu) PC
 
-In this project the default of ROS used is Kinetic. 
+In this project the default version of ROS used is Kinetic. 
 To run this project on Melodic version just replace 'kinetic' with 'melodic'.
 
 ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Desktop-Full Install) 
