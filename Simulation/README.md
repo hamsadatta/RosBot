@@ -39,7 +39,7 @@ $ cd
 $ nano .bashrc
 ```
 
-**_Add these at the end of .bashrc file and save the file_**
+**_Add these at the end of .bashrc file and source the file_**
 
 ```
 export ROS_MASTER_URI=http://localhost:11311/
@@ -47,43 +47,46 @@ export ROS_MASTER_URI=http://localhost:11311/
 export ROS_HOSTNAME=localhost
 ```
 
+`$ source /opt/ros/kinetic/setup.bash`
+
 Now, We have installed ROS and it's supporting dependencies to run this project.
 
 ### Cloning the Simulation Workspace
 
-Download the 'Simulation_ws' workspace from the repo.
+Download the 'Simulation_ws' workspace from the repo by running the following commands.
+ 
+`$ git clone https://github.com/hamsadatta/RosBot/tree/Quickstart/Simulation`
 
-Let's create a Catkin Workspace by running the below command in a terminal
+Now change directory to 'Simulation_ws' and build the workspace using the following commands.
  
- `$ mkdir ~/*<HOS_IP_ADDRESS>*/src`
- 
- copy paste the contents form the src to your src folder just created in your PC, and run the following commands
- 
-  `$ cd ~/mybot_ws`
- 
-  `$ catkin_make`
- 
- The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation
- 
- If you close the terminal do the following
+```
+$ cd ~/<YOUR_PATH>/Simulation_ws
 
- `$ source /opt/ros/kinetic/setup.bash`
+$ catkin_make
+```
+ 
+The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation.
 
- `$ cd ~/mybot_ws`
+### Initializing the Project workspace
 
- `$ source /devel/setup.bash`
+```
+$ source /opt/ros/kinetic/setup.bash
 
+$ cd ~/<YOUR_PATH>/Simulation_ws
+
+$ source /devel/setup.bash
+```
+**_Sourcing ROS and Project directory is essential to run the project._**
 
 ```diff
-- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT
+- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT 
 ```
 
-
-## STEP FOR RUNNING SIMULATION
+### STEPS FOR RUNNING SIMULATION
  
- #### *GMAPPING*
+#### *GMAPPING*
  
- **Creating the Map**
+**Creating the Map**
 
 Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
 
@@ -130,8 +133,6 @@ In Terminal 2, start map building
 In Terminal 3, launch rviz
 
 `roslaunch mybot_description mybot_rviz_amcl.launch`
-
-
 
 
 #### *HECTOR MAPPING*
