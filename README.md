@@ -18,7 +18,7 @@ ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Instal
 
 `$ sudo apt-get install ros-kinetic-rtabmap-ros`
 
-`$ sudo apt-get install ros-melodic-teleop-twist-keyboard`
+`$ sudo apt-get install ros-kinetic-teleop-twist-keyboard`
 
  To run this project on Melodic just replace 'kinetic' with 'melodic'.
 
