@@ -35,6 +35,7 @@ Now, navigate to home directory and open .bashrc file by running the below comma
 
 ```
 $ cd
+
 $ nano .bashrc
 ```
 
@@ -46,9 +47,13 @@ export ROS_MASTER_URI=http://localhost:11311/
 export ROS_HOSTNAME=localhost
 ```
 
-Now that we have installed ROS and are ready with our dependencies, firstly download the 'Simulation_ws' workspace.
- 
-Create a Catkin Workspace by running the below command in a terminal
+Now, We have installed ROS and it's supporting dependencies to run this project.
+
+### Cloning the Simulation Workspace
+
+Download the 'Simulation_ws' workspace from the repo.
+
+Let's create a Catkin Workspace by running the below command in a terminal
  
  `$ mkdir ~/*<HOS_IP_ADDRESS>*/src`
  
