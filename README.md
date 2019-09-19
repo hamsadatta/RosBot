@@ -1,422 +1,57 @@
 # RosBot (An Autonomous Navigation Ambition Project)
 
-## Quick Start
-This is a quick start guide for running our project in your system
-This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms. 
+## Abstract
+As autonomous driving is rapidly becoming the next major challenge in the automotive industry, the problem of Simultaneous Localization and Mapping (SLAM) has never been more relevant than it is today. This project presents the idea of examining SLAM algorithms by implementing such an algorithm on a custom bot which has been fitted with sensors and microcontrollers. The software architecture of this small-scale vehicle is based on the Robot Operating System (ROS), an open-source framework designed to be used in robotic applications.
+
+This Project covers, the examining of these algorithms in both simulations, and real-world experiments. The method used in this project is more related to v-development cycle, meaning that a near model of the vehicle is first implemented in simulations using each algorithm and followed by real world experiment. The comparative analysis is performed next.
+
+This project has resulted in a dynamic model of a small-scale vehicle which can be used for simulation of any ROS-compliant SLAM-algorithm, and this model has been simulated extensively in order to provide empirical evidence to define which SLAM algorithm is most suitable for this application.
+
+This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
-ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Desktop-Full Install)
 
-If you are new to ROS please refer ROS wiki page-http://wiki.ros.org/ROS/Tutorials
+Compatability mode
 
-Install the following dependencies to run this project
+Hardware and software used for this project:
 
-`$ sudo apt-get update`
 
-`$ sudo apt-get install ros-kinetic-slam-gmapping`
+Software
 
-`$ sudo apt-get install ros-kinetic-hector-slam`
+    ROS: Kinetic
+    
+    OS:  Ubuntu 16.04
+    
+    SIM: Gazebo 7.0.0
 
-`$ sudo apt-get install ros-kinetic-rtabmap-ros`
+Hardware
 
-`$ sudo apt-get install ros-kinetic-teleop-twist-keyboard`
+MASTER PC
 
- To run this project on Melodic version just replace 'kinetic' with 'melodic'.
+    RAM: 8GB DDR4
+    
+    SSD: Samsung EVO
+    
+    CPU: Intel i5 (8th Gen)
+    
+    GPU: Nvidia MX150-4GB 
+    
+ REMOTE PC
  
+    Raspberry pi3 B+
  
-Now that we have installed ROS and are ready with our dependencies,firstly download the 'mybot_ws' workspace from the simulation   directory.
+ OTHERS
  
- create a catkin package by running the below command in a terminal
- 
- `$ cd ~/mybot_ws/src`
- 
- copy paste the contents form the src to your src folder just created in your PC, and run the following commands
- 
-  `$ cd ~/mybot_ws`
- 
-  `$ catkin_make`
- 
- The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation
- 
- If you close the terminal do the following
-
- `$ source /opt/ros/kinetic/setup.bash`
-
- `$ cd ~/mybot_ws`
-
- `$ source /devel/setup.bash`
-
-**_Add these in .bashrc file for single system ROS implementation_**
-
-export ROS_MASTER_URI=http://localhost:11311/
-
-export ROS_HOSTNAME=localhost
-
-**_Add these in .bashrc file for multi system ROS implementation_**
-
-export ROS_MASTER_URI=http://*<HOS_IP_ADDRESS>*/
-
-export ROS_HOSTNAME=*<HOS_IP_ADDRESS>*
-
-export ROS_IP=*<HOS_IP_ADDRESS>*
-
-
-```diff
-- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT
-```
-
-
-## STEP FOR RUNNING SIMULATION
- 
- #### *GMAPPING*
- 
- **Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation gmapping_demo.launch`
-
-
-In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
-In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-In Terminal 5, save the map to some file path
-
-`rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map`
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation amcl_demo.launch`
-
-
-In Terminal 3, launch rviz
-
-`roslaunch mybot_description mybot_rviz_amcl.launch`
-
-
-
-
-#### *HECTOR MAPPING*
-
-**Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation tutorial.launch`
-
-
-In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
-In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-In Terminal 5, save the map to some file path
-
-`rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/hector_map`
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation amcl_demo.launch`
-
-
-In Terminal 3, launch rviz
-
-`roslaunch mybot_description mybot_rviz_amcl.launch`
-
-
-
-
-### *RTAB MAPPING*
-
-**Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation rtab.launch`
-
-
-In Terminal 3, launch rviz and set the following parameters:
-
-`roslaunch mybot_description mybot_rviz_gmapping.launch`
-
-
-In Terminal 4, start teleop
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-Map server is not required in RTAB-MAP 
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the Gazebo world
-
-`roslaunch mybot_gazebo mybot_world.launch`
-
-
-In Terminal 2, start map building
-
-`roslaunch mybot_navigation rtab.launch localization:=true`
-
-
-In Terminal 3, launch rviz
-
-`roslaunch mybot_description mybot_rviz_amcl.launch`
-
-
-## STEPS FOR RUNNING REAL TIME EXPERIMENTATION
-
- ### *GMAPPING*
- 
- **Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-In Terminal 3, start map building (IN MASTER PC)
-
-`roslaunch rosbot_navigation gmapping_demo.launch`
-
-
-In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-In Terminal 5, start teleop (IN MASTER PC)
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-In Terminal 6, save the map to some file path (IN MASTER PC)
-
-`rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/test_map`
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-
-In Terminal 3, start map building
-
-`roslaunch rosbot_navigation amcl_demo.launch`
-
-
-In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-
-### *HECTOR MAP*
- 
- **Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-In Terminal 3, start map building (IN MASTER PC)
-
-`roslaunch rosbot_navigation tutorial.launch`
-
-
-In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-In Terminal 5, start teleop (IN MASTER PC)
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-In Terminal 6, save the map to some file path (IN MASTER PC)
-
-`rosrun map_server map_saver -f ~/gmap_rt_ws/src/mybot_navigation/maps/hector_map`
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-
-In Terminal 3, start map building
-
-`roslaunch rosbot_navigation amcl_demo.launch`
-
-
-In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-
-
-### *RTAB-MAP*
- 
- **Creating the Map**
-
-Run the following commands below. Use the teleop to move the robot around to create an accurate and thorough map.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-In Terminal 3, launch the kinect depth camera  launch file (IN RPi3 remote SLAVE PC)
-
-`sudo chmod 777 -R /dev/bus/usb` (one time use ,before running the launch file)
-
-`roslaunch freenect_launch freenect.launch depth_registration:=true data_skip:=2`
-
-
-In Terminal 4, start map building (IN MASTER PC)
-
-`roslaunch rosbot_navigation rtab.launch`
-
-
-In Terminal 5, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-In Terminal 6, start teleop (IN MASTER PC)
-
-`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
-
-
-**Saving the Map**
-
-Map server is not required in RTAB-MAP 
-
-
-**Loading the Map followed by localization**
-
-Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
-
-In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch rplidar_ros view_rplidar.launch`
-
-In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
-
-`roslaunch ros_arduino_python arduino.launch`
-
-In Terminal 3, launch the kinect depth camera  launch file (IN RPi3 remote SLAVE PC)
-
-`sudo chmod 777 -R /dev/bus/usb` (one time use ,before running the launch file)
-
-`roslaunch freenect_launch freenect.launch depth_registration:=true data_skip:=2`
-
-
-In Terminal 3, start map building (IN MASTER PC)
-
-`roslaunch rosbot_navigation rtab.launch localization:=true`
-
-
-In Terminal 4, launch rviz and set the required parameters (IN MASTER PC)
-
-`roslaunch rosbot_urdf rviz.launch`
-
-
-
+    RP LIDAR A1M8
+    
+    Microsoft Kinect Sensor
+    
+    SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
+    
+    L298N 2A Based Motor Driver Module
+
+
+Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
 
 
 
