@@ -19,7 +19,7 @@ Hardware and software used for this project:
 
 Software
 
-    ROS: Kinetic
+    ROS: Kinetic Kame
     
     OS:  Ubuntu 16.04
     
