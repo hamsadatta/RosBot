@@ -5,10 +5,11 @@ This is a quick start guide for running the project
 The Repo contains launch files for Gmapping, Hector Map and Rtab Map. 
 It also includes launch files for Gazebo simulations as well as Real-time hardware implementation.
 
+ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu
+
+If you are new to ROS please refer ROS wiki page-http://wiki.ros.org/ROS/Tutorials
 
 Install the following dependencies to run this project
-
-ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 `$ sudo apt-get update`
 
@@ -20,8 +21,23 @@ ROS(Desktop-Full Install) installation link - http://wiki.ros.org/kinetic/Instal
 
 `$ sudo apt-get install ros-kinetic-teleop-twist-keyboard`
 
- To run this project on Melodic just replace 'kinetic' with 'melodic'.
-
+ To run this project on Melodic version just replace 'kinetic' with 'melodic'.
+ 
+ 
+Now that we have installed ROS and are ready with our dependencies,firstly download the 'mybot_ws' workspace from the simulation   directory.
+ 
+ create a catkin package by running the below command in a terminal
+ 
+ `cd ~/mybot_ws/src`
+ 
+ copy paste the contents form the src to your src folder just created in your PC, and run the following commands
+ 
+  `cd ~/mybot_ws`
+ 
+  `catkin_make`
+ 
+ The above command 'catkin_make' will build you workspace. 
+ 
 Note, we modified our model to navigate a bit better. For example, we added an extra caster wheel to reduce bouncing laser during abrupt stops. Also added the depth camera plugin for RTAB-MAP. We understand that our robot model requires additional tweaking as it has some weird navigational kinks, but most of the problems are properly tuned in config files. Any suggestions would be appreciated. Nevertheless, our model is sufficient for playing with the ROS navigation stack. 
 
 
