@@ -215,14 +215,16 @@ Map server is not required in RTAB-MAP
 Close all previous terminals and run the following commands below. Once loaded, use rviz to set navigation waypoints and the robot should move autonomously.
 
 In Terminal 1, launch the Gazebo world
-```roslaunch mybot_gazebo mybot_world.launch
+```
+roslaunch mybot_gazebo mybot_world.launch
 ```
 In Terminal 2, start map building
 ```
 roslaunch mybot_navigation rtab.launch localization:=true
 ```
 In Terminal 3, launch rviz
-```roslaunch mybot_description mybot_rviz_amcl.launch
+```
+roslaunch mybot_description mybot_rviz_amcl.launch
 ```
 
 
