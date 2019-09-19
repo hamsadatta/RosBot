@@ -11,7 +11,7 @@ If you are new to ROS please refer ROS wiki page-http://wiki.ros.org/ROS/Tutoria
 
 Install the following dependencies to run this project
 
-`$ sudo apt-get update`
+```$ sudo apt-get update```
 
 `$ sudo apt-get install ros-kinetic-slam-gmapping`
 
