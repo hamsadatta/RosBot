@@ -58,7 +58,7 @@ Now, We have installed ROS and it's supporting dependencies to run this project.
 Download the 'Simulation_ws' workspace from the repo by running the following commands.
  
 ```
-$ git clone https://github.com/hamsadatta/RosBot/tree/Quickstart/Simulation
+$ git clone https://github.com/hamsadatta/RosBot
 ```
 
 Now change directory to 'Simulation_ws' and build the workspace using the following commands.
