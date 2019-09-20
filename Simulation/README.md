@@ -53,9 +53,9 @@ $ source /opt/ros/kinetic/setup.bash
 
 Now, We have installed ROS and it's supporting dependencies to run this project.
 
-### Cloning the Simulation Workspace
+### Cloning the Repo of Simulation Workspace
 
-Download the 'Simulation_ws' workspace from the repo by running the following commands.
+Download the RodBot Repo by running the following commands.
  
 ```
 $ git clone https://github.com/hamsadatta/RosBot
@@ -64,7 +64,7 @@ $ git clone https://github.com/hamsadatta/RosBot
 Now change directory to 'Simulation_ws' and build the workspace using the following commands.
  
 ```
-$ cd ~/<YOUR_PATH>/Simulation_ws
+$ cd ~/RosBot/Simulation/Simulation_ws
 
 $ catkin_make
 ```
