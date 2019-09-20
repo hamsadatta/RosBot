@@ -76,7 +76,7 @@ The above command 'catkin_make' will build you workspace. Now you are all set to
 ```
 $ source /opt/ros/kinetic/setup.bash
 
-$ cd ~/<YOUR_PATH>/Simulation_ws
+$ cd ~/RosBot/Simulation/Simulation_ws
 
 $ source /devel/setup.bash
 ```
