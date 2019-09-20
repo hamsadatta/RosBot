@@ -78,7 +78,7 @@ $ source /opt/ros/kinetic/setup.bash
 
 $ cd ~/RosBot/Simulation/Simulation_ws
 
-$ source /devel/setup.bash
+$ source ~/RosBot/Simulation/Simulation_ws/devel/setup.bash
 ```
 **_Sourcing ROS and Project directory is essential to run the project._**
 
