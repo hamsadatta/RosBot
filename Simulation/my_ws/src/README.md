@@ -6,7 +6,7 @@ This package consits of the URDF(Unified Robot Description Format) files for the
 
 The robot is realized in rosbot.xacro file and the rosbot_ngpu.xacro file has the support for non-GPU(ngpu) systems.
 
-The meshes folder has the support file hokuyo.dae for adding laser sensor plugin
+The meshes folder has the support file hokuyo.dae for adding laser sensor model plugin
 
 The packege has other launch files to visualize the robot in rviz which internally utilize the rosbot.xacro file
 
