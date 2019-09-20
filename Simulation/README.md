@@ -95,15 +95,15 @@ Run the following commands below. And use teleop to move the robot around to cre
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation gmapping_demo.launch
+roslaunch rosbot_navigation gmapping_demo.launch
 ```
 In Terminal 3, launch rviz and set the parameters:
 ```
-roslaunch mybot_description mybot_rviz_gmapping.launch
+roslaunch rosbot_description rosbot_rviz_gmapping.launch
 ```
 In Terminal 4, start teleop
 ```
@@ -114,7 +114,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 **Saving the Map**
 In Terminal 5, save the map to some file path
 ```
-rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/test_map
+rosrun map_server map_saver -f ~/Simulation_ws/src/rosbot_navigation/maps/test_map
 ```
 
 
@@ -123,15 +123,15 @@ Close all previous terminals and run the following commands below. Once loaded, 
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation amcl_demo.launch
+roslaunch rosbot_navigation amcl_demo.launch
 ```
 In Terminal 3, launch rviz
 ```
-roslaunch mybot_description mybot_rviz_amcl.launch
+roslaunch rosbot_description rosbot_rviz_amcl.launch
 ```
 
 
@@ -142,15 +142,15 @@ Run the following commands below. Use the teleop to move the robot around to cre
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation tutorial.launch
+roslaunch rosbot_navigation tutorial.launch
 ```
 In Terminal 3, launch rviz and set the parameters:
 ```
-roslaunch mybot_description mybot_rviz_gmapping.launch
+roslaunch rosbot_description rosbot_rviz_gmapping.launch
 ```
 In Terminal 4, start teleop
 ```
@@ -161,7 +161,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 **Saving the Map**
 In Terminal 5, save the map to some file path
 ```
-rosrun map_server map_saver -f ~/mybot_ws/src/mybot_navigation/maps/hector_map
+rosrun map_server map_saver -f ~/Simulation_ws/src/rosbot_navigation/maps/hector_map
 ```
 
 
@@ -170,15 +170,15 @@ Close all previous terminals and run the following commands below. Once loaded, 
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation amcl_demo.launch
+roslaunch rosbot_navigation amcl_demo.launch
 ```
 In Terminal 3, launch rviz
 ```
-roslaunch mybot_description mybot_rviz_amcl.launch
+roslaunch rosbot_description rosbot_rviz_amcl.launch
 ```
 
 
@@ -191,15 +191,15 @@ Run the following commands below. Use the teleop to move the robot around to cre
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation rtab.launch
+roslaunch rosbot_navigation rtab.launch
 ```
 In Terminal 3, launch rviz and set the parameters:
 ```
-roslaunch mybot_description mybot_rviz_gmapping.launch
+roslaunch rosbot_description rosbot_rviz_gmapping.launch
 ```
 In Terminal 4, start teleop
 ```
@@ -216,15 +216,15 @@ Close all previous terminals and run the following commands below. Once loaded, 
 
 In Terminal 1, launch the Gazebo world
 ```
-roslaunch mybot_gazebo mybot_world.launch
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
 ```
-roslaunch mybot_navigation rtab.launch localization:=true
+roslaunch rosbot_navigation rtab.launch localization:=true
 ```
 In Terminal 3, launch rviz
 ```
-roslaunch mybot_description mybot_rviz_amcl.launch
+roslaunch rosbot_description rosbot_rviz_amcl.launch
 ```
 
 
