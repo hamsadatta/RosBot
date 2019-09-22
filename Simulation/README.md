@@ -28,6 +28,13 @@ $ sudo apt-get install ros-kinetic-hector-slam
 $ sudo apt-get install ros-kinetic-rtabmap-ros
 
 $ sudo apt-get install ros-kinetic-teleop-twist-keyboard
+
+$ sudo apt-get install ros-kinetic-amcl
+
+$ sudo apt-get install ros-kinetic-move-base
+
+$ sudo apt-get install ros-kinetic-map-server
+
 ```
 ### Setting up ROS Environment
 
