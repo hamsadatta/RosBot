@@ -708,7 +708,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='rosbot'>
+      <model name='mybot'>
         <pose frame=''>0.002494 0.017992 0.099775 0.001291 0.00144 -0.035214</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
@@ -934,7 +934,7 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='rosbot'>
+    <model name='mybot'>
       <link name='chassis'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <inertial>
@@ -1103,7 +1103,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/hamsadatta/my_ws/src/rosbot_description/meshes/hokuyo.dae</uri>
+              <uri>/home/hamsadatta/my_ws/src/mybot_description/meshes/hokuyo.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -1178,7 +1178,7 @@
             </noise>
           </ray>
           <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_gpu_laser.so'>
-            <topicName>/rosbot/laser/scan</topicName>
+            <topicName>/mybot/laser/scan</topicName>
             <frameName>hokuyo</frameName>
             <robotNamespace>/</robotNamespace>
           </plugin>
