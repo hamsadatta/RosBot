@@ -2,17 +2,17 @@
 
 ## Quick Start
 This is a quick start guide for running our project in your system
-This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms. 
+This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms.
 It also includes launch files for Gazebo simulations.
 
 If you are new to ROS please refer ROS wiki page - http://wiki.ros.org/ROS/Tutorials
 
 ### Setting up ROS in a Linux (Ubuntu) PC
 
-In this project the default version of ROS used is Kinetic. 
+In this project the default version of ROS used is Kinetic.
 To run this project on Melodic version just replace 'kinetic' with 'melodic' in the below commands.
 
-ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Desktop-Full Install) 
+ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Desktop-Full Install)
 
 ### Installing essential dependencies
 
@@ -56,19 +56,19 @@ Now, We have installed ROS and it's supporting dependencies to run this project.
 ### Cloning the Repo of Simulation Workspace
 
 Download the RodBot Repo by running the following commands.
- 
+
 ```
-$ git clone https://github.com/hamsadatta/RosBot
+$ git clone https://github.com/hamsadatta/RosBot.git
 ```
 
 Now change directory to 'Simulation_ws' and build the workspace using the following commands.
- 
+
 ```
 $ cd ~/RosBot/Simulation/Simulation_ws
 
 $ catkin_make
 ```
- 
+
 The above command 'catkin_make' will build you workspace. Now you are all set to run the simulation.
 
 ### Initializing the Project workspace
@@ -83,13 +83,13 @@ $ source ~/RosBot/Simulation/Simulation_ws/devel/setup.bash
 **_Sourcing ROS and Project directory is essential to run the project._**
 
 ```diff
-- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT 
+- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT
 ```
 
 ### THE SIMULATION
- 
+
 #### *GMAP SLAM*
- 
+
 **Creating the Map**
 Run the following commands below. And use teleop to move the robot around to create an accurate and thorough map.
 
@@ -208,7 +208,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 
 **Saving the Map**
-Map server is not required in RTAB-MAP 
+Map server is not required in RTAB-MAP
 
 
 **Loading the Map followed by localization**
@@ -226,9 +226,3 @@ In Terminal 3, launch rviz
 ```
 roslaunch rosbot_description rosbot_rviz_amcl.launch
 ```
-
-
-
-
-
-
