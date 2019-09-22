@@ -30,7 +30,7 @@ MASTER PC
 
     RAM: 8GB DDR4
 
-    SSD: Samsung EVO
+    Storage: Samsung EVO SSD
 
     CPU: Intel i5 (8th Gen)
 
