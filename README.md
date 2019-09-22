@@ -11,7 +11,7 @@ This project has resulted in a dynamic model of a small-scale vehicle which can 
 Please navigate through the readme files to know more about simulation and real-time implementation in respective folders_**
 
 
-## Compatability mode
+## Compatability
 
 Hardware and software used for this project:
 
@@ -44,7 +44,7 @@ MASTER PC
 
     RP LIDAR A1M8
 
-    Microsoft Kinect Sensor
+    Microsoft Kinect Sensor (first gen)
 
     SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
 
