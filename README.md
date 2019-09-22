@@ -22,7 +22,7 @@ Software
 
     OS:  Ubuntu 16.04
 
-    SIM: Gazebo 7.0.1
+    SIM: Gazebo 7.0.0
 
 Hardware
 
