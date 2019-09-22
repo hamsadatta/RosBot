@@ -10,7 +10,7 @@ This project has resulted in a dynamic model of a small-scale vehicle which can 
 **_This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
 Please navigate through the readme files to know more about simulation and real-time implementation in respective folders_**
 
- 
+
 ## Compatability mode
 
 Hardware and software used for this project:
@@ -19,42 +19,33 @@ Hardware and software used for this project:
 Software
 
     ROS: Kinetic Kame
-    
+
     OS:  Ubuntu 16.04
-    
-    SIM: Gazebo 7.0.0
+
+    SIM: Gazebo 7.0.1
 
 Hardware
 
 MASTER PC
 
     RAM: 8GB DDR4
-    
+
     SSD: Samsung EVO
-    
+
     CPU: Intel i5 (8th Gen)
-    
-    GPU: Nvidia MX150-4GB 
-    
+
+    GPU: Nvidia MX150-4GB
+
  REMOTE PC
- 
+
     Raspberry pi3 B+
- 
+
  OTHERS
- 
+
     RP LIDAR A1M8
-    
+
     Microsoft Kinect Sensor
-    
+
     SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
-    
+
     L298N 2A Based Motor Driver Module
-
-
-
-
-
-
-
-
-
