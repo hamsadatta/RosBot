@@ -23,7 +23,7 @@ $ sudo apt-get update
 
 $ sudo apt-get install ros-kinetic-slam-gmapping
 
-$ sudo apt-get install ros-kinetic-hector-slam
+$ sudo apt-get install ros-kinetic-hector-slam   
 
 $ sudo apt-get install ros-kinetic-rtabmap-ros
 
@@ -36,6 +36,9 @@ $ sudo apt-get install ros-kinetic-move-base
 $ sudo apt-get install ros-kinetic-map-server
 
 ```
+
+**_(At the time of writing, the package hector-slam is not available for melodic version of ROS)_**
+
 ### Setting up ROS Environment
 
 Now, navigate to home directory and open .bashrc file by running the below command
@@ -90,7 +93,7 @@ $ source ~/RosBot/Simulation/Simulation_ws/devel/setup.bash
 **_Sourcing ROS and Project directory is essential to run the project._**
 
 ```diff
-- RUNNING ROSCORE IN THE BACKGROUND IS EXTREAMLY IMPORTANT
+- RUNNING ROSCORE IN THE BACKGROUND IS EXTREMELY IMPORTANT
 ```
 
 ### THE SIMULATION
