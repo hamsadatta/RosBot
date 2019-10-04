@@ -34,7 +34,7 @@ MASTER PC
 
     CPU: Intel i5 (8th Gen)
 
-    GPU: Nvidia MX150-4GB
+    GPU: Nvidia MX150 4GB
 
  REMOTE PC
 
