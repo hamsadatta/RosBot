@@ -1,7 +1,7 @@
 # Implementation of SLAM Algorithms in Simulation 
 
 ## Quick Start
-This is a quick start guide for running our project in your system
+This is a quick start guide for beginners intrested in running our project in your system
 This Repo contains launch files for Gmapping, Hector Map and Rtab Map SLAM Algorithms.
 It also includes launch files for Gazebo simulations.
 
