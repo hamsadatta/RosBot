@@ -21,8 +21,7 @@ Install the following dependencies after ROS is installed
 ```
 $ sudo apt-get update
 
-$ sudo apt-get install ros-kinetic-slam-gmapping ros-kinetic-hector-slam ros-kinetic-rtabmap-ros ros-kinetic-teleop-twist-keyboard
-ros-kinetic-amcl ros-kinetic-move-base ros-kinetic-map-server
+$ sudo apt-get install ros-kinetic-slam-gmapping 
 
 $ sudo apt-get install ros-kinetic-hector-slam   
 
