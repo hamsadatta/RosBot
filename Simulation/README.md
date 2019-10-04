@@ -1,4 +1,4 @@
-# Implementation of SLAM Algorithms in Simulation
+# Implementation of SLAM Algorithms in Simulation 
 
 ## Quick Start
 This is a quick start guide for running our project in your system
