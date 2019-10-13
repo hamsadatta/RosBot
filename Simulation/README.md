@@ -9,7 +9,7 @@ If you are new to ROS please refer ROS wiki page - http://wiki.ros.org/ROS/Tutor
 
 ### Setting up ROS in a Linux (Ubuntu) PC
 
-In this project the stable version of ROS used is Kinetic.
+In this project the default version of ROS used is Kinetic.
 To run this project on Melodic version just replace 'kinetic' with 'melodic' in the below commands.
 
 ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Install Desktop-Full)
@@ -136,6 +136,7 @@ In Terminal 1, launch the Gazebo world
 roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
+**_Note:- To use the map that was saved earlier, please change the path for map in the below launch file._**
 ```
 roslaunch rosbot_navigation amcl_demo.launch
 ```
@@ -183,6 +184,7 @@ In Terminal 1, launch the Gazebo world
 roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
+**_Note:- To use the map that was saved earlier, please change the path for map in the below launch file._**
 ```
 roslaunch rosbot_navigation amcl_demo.launch
 ```
