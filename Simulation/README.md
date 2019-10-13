@@ -9,7 +9,7 @@ If you are new to ROS please refer ROS wiki page - http://wiki.ros.org/ROS/Tutor
 
 ### Setting up ROS in a Linux (Ubuntu) PC
 
-In this project the stable version of ROS is used called Kinetic.
+In this project the stable version of ROS is used which is Kinetic.
 To run this project on Melodic version just replace 'kinetic' with 'melodic' in the below commands.
 
 ROS installation link - http://wiki.ros.org/kinetic/Installation/Ubuntu  (Install Desktop-Full)
