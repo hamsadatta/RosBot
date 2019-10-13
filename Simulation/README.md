@@ -136,6 +136,7 @@ In Terminal 1, launch the Gazebo world
 roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
+
 **_Note:- To use the map that was saved earlier, please change the path for map in the below launch file._**
 ```
 roslaunch rosbot_navigation amcl_demo.launch
@@ -184,6 +185,7 @@ In Terminal 1, launch the Gazebo world
 roslaunch rosbot_gazebo rosbot_world.launch
 ```
 In Terminal 2, start map building
+
 **_Note:- To use the map that was saved earlier, please change the path for map in the below launch file._**
 ```
 roslaunch rosbot_navigation amcl_demo.launch
