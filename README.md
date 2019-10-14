@@ -7,7 +7,7 @@ This Project covers, the examining of these algorithms in both simulations, and 
 This project has resulted in a dynamic model of a small-scale vehicle which can be used for simulation of any ROS-compliant SLAM-algorithm, and this model has been simulated extensively in order to provide empirical evidence to define which SLAM algorithm is most suitable for this application.
 
 
-**_This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
+**_This Repository contains launch files for Gmapping, Hector Map and Rtab Map.
 Please navigate through the readme files to know more about simulation and real-time implementation in respective folders_**
 
 
