@@ -233,6 +233,8 @@ Run the following commands below. Use the teleop to move the robot around to cre
 
 In Terminal 1, launch the RPLidar launch file (IN RPi3 remote SLAVE PC)
 
+sudo chmod 666 /dev/ttyUSB0
+
 `roslaunch rplidar_ros view_rplidar.launch`
 
 In Terminal 2, launch the Arduino bridge launch file (IN RPi3 remote SLAVE PC)
