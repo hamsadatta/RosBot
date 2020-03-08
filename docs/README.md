@@ -10,6 +10,8 @@ This project has resulted in a dynamic model of a small-scale vehicle which can 
 **_This Repo contains launch files for Gmapping, Hector Map and Rtab Map.
 Please navigate through the readme files to know more about simulation and real-time implementation in respective folders_**
 
+Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for Wiki
+
  
 ## Compatability mode
 
