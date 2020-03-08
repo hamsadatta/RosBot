@@ -9,6 +9,9 @@ This project has brought about a dynamic model of a small-scale bot which can be
 **_This Repository contains launch files for Gmapping, Hector Map and Rtab Map.
 Please navigate through the readme files to know more about simulation and real-time implementation in respective folders_**
 
+Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for Wiki
+
+
 ## Build status
 
 [![Build Status](https://travis-ci.org/hamsadatta/RosBot.svg?branch=Quickstart)](https://travis-ci.org/hamsadatta/RosBot)
