@@ -53,6 +53,6 @@ MASTER PC
 
     Microsoft Kinect Sensor (first gen)
 
-    SPG30E-200K DC Geared Motor with Encoder 17RPM 80N.cm 12V
+    SPG30E-200K DC Geared Motor with Encoder 17 RPM, 80 N.cm, 12V
 
     L298N 2A Based Motor Driver Module
