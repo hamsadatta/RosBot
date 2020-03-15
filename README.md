@@ -11,7 +11,7 @@ Please navigate through the readme files to know more about simulation and real-
 
 ## Documentation
 
-Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for Wiki
+Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for our article on ROS.
 
 
 ## Build status
