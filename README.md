@@ -1,6 +1,6 @@
-# RosBot (An Autonomous Navigation Ambition Project)
+# RosBot (An Autonomous Navigation Project)
 
-Autonomous driving is the current hot topic in automotive industry. The utilization of Simultaneous Localization and Mapping (SLAM) is commonly found in autonomous navigation, the problem of SLAM has never been more significant than it is today. This project presents the idea of examining SLAM algorithms by implementing such an algorithm on a custom bot which has been fitted with sensors and microcontrollers. The software architecture is based on the Robot Operating System (ROS), an open-source framework designed to be used in robotic applications.
+Autonomous driving is the current hot topic in automotive industry. The utilization of Simultaneous Localization and Mapping (SLAM) is commonly found in autonomous navigation. This project presents the idea of examining SLAM algorithms by implementing such an algorithm on a custom bot which has been fitted with sensors and microcontrollers. The software architecture is based on the Robot Operating System (ROS), an open-source framework designed to be used in robotic applications.
 
 This Project covers, the examining of these algorithms in both simulations, and real-world experiments. The method used in this project is more related to v-development cycle, meaning that a near model of the vehicle is first implemented in simulations using each algorithm and followed by real world experiment.
 
@@ -13,10 +13,10 @@ Please navigate through the readme files to know more about simulation and real-
 
 Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for our article on ROS.
 
+## video demo
 
-## Build status
+https://www.youtube.com/watch?v=0BfArKlX1TU
 
-[![Build Status](https://travis-ci.org/hamsadatta/RosBot.svg?branch=Quickstart)](https://travis-ci.org/hamsadatta/RosBot)
 
 ## Compatability
 
