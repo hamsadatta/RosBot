@@ -17,6 +17,8 @@ Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for
 
 https://www.youtube.com/watch?v=0BfArKlX1TU
 
+![Rosbot](https://user-images.githubusercontent.com/43320670/131134184-fc4d0d6b-a25e-4fd5-bd77-5c402641fa7d.JPG)
+
 
 ## Compatability
 
