@@ -63,3 +63,15 @@ MASTER PC
     SPG30E-200K DC Geared Motor with Encoder 17 RPM, 80 N.cm, 12V
 
     L298N 2A Based Motor Driver Module
+    
+    
+ Credits
+
+    [ hbrobotics/ros_arduino_bridge](https://github.com/hbrobotics/ros_arduino_bridge)
+    
+    [here]()
+    
+    [here]()
+    
+    [here]()
+   
