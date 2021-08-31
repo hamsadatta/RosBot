@@ -67,11 +67,10 @@ MASTER PC
     
  ## Credits
 
-   [ hbrobotics/ros_arduino_bridge](https://github.com/hbrobotics/ros_arduino_bridge)
+   [ hbrobotics/ros_arduino_bridge ](https://github.com/hbrobotics/ros_arduino_bridge)
     
-   [here]()
+   [ robopeak/rplidar_ros ](https://github.com/robopeak/rplidar_ros)
     
-   [here]()
+   [ richardw05/mybot_ws ](https://github.com/richardw05/mybot_ws)
     
-   [here]()
    
