@@ -15,7 +15,7 @@ Click [here](https://github.com/hamsadatta/RosBot/wiki/1.-Understanding-ROS) for
 
 ## video demo
 
-https://www.youtube.com/watch?v=0BfArKlX1TU
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0BfArKlX1TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Hardware
 
